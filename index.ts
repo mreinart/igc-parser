@@ -4,7 +4,7 @@ const ONE_HOUR = 60 * 60 * 1000;
 const ONE_DAY = 24 * 60 * 60 * 1000;
 
 /* tslint:disable:max-line-length */
-const RE_A = /^A(\w{3})(\w{3,}?)(?:FLIGHT:(\d+)|\:(.+))?$/;
+const RE_A = /^A(\w{3})(\w{3,}?)(?:FLIGHT:(\d+)|:(.+))?$/;
 const RE_HFDTE = /^HFDTE(?:DATE:)?(\d{2})(\d{2})(\d{2})(?:,?(\d{2}))?/;
 const RE_PLT_HEADER = /^H(\w)PLT(?:.{0,}?:(.*)|(.*))$/;
 const RE_CM2_HEADER = /^H(\w)CM2(?:.{0,}?:(.*)|(.*))$/; // P is used by some broken Flarms
@@ -18,7 +18,7 @@ const RE_RFW_HEADER = /^H(\w)RFW(?:.{0,}?:(.*)|(.*))$/;
 const RE_RHW_HEADER = /^H(\w)RHW(?:.{0,}?:(.*)|(.*))$/;
 const RE_DTM_HEADER = /^H(\w)DTM(?:.{0,}?:(.*)|(.*))$/;
 const RE_ALG_HEADER = /^H(\w)ALGALTGPS(?:.{0,}?:(.*)|(.*))$/;
-const RE_ALP_HEADER = /^H(\w)ALPALTPRESSURE(?:.{0,}?:(.*)|(.*))$/;
+const RE_ALP_HEADER = /^H(\w)ALPALTPRE(?:.{0,}?:(.*)|(.*))$/;
 const RE_B = /^B(\d{2})(\d{2})(\d{2})(\d{2})(\d{2})(\d{3})([NS])(\d{3})(\d{2})(\d{3})([EW])([AV])(-\d{4}|\d{5})(-\d{4}|\d{5})/;
 const RE_K = /^K(\d{2})(\d{2})(\d{2})/;
 const RE_IJ = /^[IJ](\d{2})(?:\d{2}\d{2}[A-Z]{3})+/;

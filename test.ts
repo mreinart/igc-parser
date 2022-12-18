@@ -149,8 +149,10 @@ describe('IGCParser', () => {
     });
 
     it('handles GPS Datum FAI Sporting Code 2021 0.9.0 - 3.2.3 & 3.4', () => {
-      // Example data as of 3.4 - see fai.org
-      let result = IGCParser.parse([
+      /* tslint:disable:max-line-length */
+      // https://www.fai.org/sites/default/files/civl/documents/sporting_code_s7_h_-_civl_flight_recorder_specification_2021_v0.9.0.pdf
+      /* tslint:enable:max-line-length */
+      let result = IGCParser.parse([                       // Example data as in 3.4
         'AVXX00026',
         'HFDTEDATE:160816',
         'HFPLTPILOTINCHARGE:Bloggs Bill',
